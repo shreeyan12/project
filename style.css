@@ -1,0 +1,150 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #000;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Home */
+.home {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    transition: background-image 1.5s ease-in-out;
+    animation: slideshow 12s infinite;
+  }
+  
+  @keyframes slideshow {
+    0% {
+      background-image: url('/images/uk-img.jpg');
+    }
+    20% {
+      background-image: url('/images/southkorea.jpg');
+    }
+    40% {
+      background-image: url('/images/india.jpg');
+    }
+    60% {
+      background-image: url('/images/france.jpg');
+    }
+    80% {
+      background-image: url('/images/italy.jpg');
+    }
+    100% {
+      background-image: url('/images/japan.jpg');
+    }
+  }
+  
+
+
+  
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.home .btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.book .form-control {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/* destination*/
+.destination .card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.destination .card:hover {
+    transform: translateY(-10px);
+}
+
+.destination .card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.destination .btn {
+    border-radius: 20px;
+}
+
+/* Services*/
+.services i {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.services h4 {
+    margin-top: 10px;
+}
+
+.about img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .social-links i {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer .social-links i:hover {
+    color: #007bff;
+}

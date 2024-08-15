@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Travel Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap Link--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Font Awesome Cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> TravelVentures</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#book">Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Home page -->
+    <header id="home" class="home d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 text-light">Discover Your Next Adventure</h1>
+            <p class="lead text-light">Explore the world with our exclusive travel packages</p>
+            <a href="#destinations" class="btn btn-primary btn-lg">Explore</a>
+        </div>
+    </header>
+    
+
+    <!-- booking -->
+<section id="book" class="book py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Book Your Destination</h2>
+        <div class="row">
+            <div class="col-md-5">
+                <img src="/images/file.png" alt="About Us" class="img-fluid rounded book-image">
+            </div>
+            <div class="col-md-5 offset-md-1">
+                <form>
+                    <input type="text" class="form-control mb-3" placeholder="Destination" required>
+                    <input type="number" class="form-control mb-3" placeholder="Number of People" required>
+                    <input type="date" class="form-control mb-3" placeholder="Travel Date" required>
+                    <textarea class="form-control mb-3" rows="5" placeholder="Additional Information"></textarea>
+                    <button type="submit" class="btn btn-primary">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    <!-- Destnation  -->
+    <section id="Destinations" class="Destinations py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Destinations</h2>
+            <div class="row">
+                <!--UK-->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/uk-img.jpg" class="card-img-top" alt="UK">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">United Kingdom</h5>
+                            <p class="card-text">Experience the historic landmarks and vibrant cities of the UK.</p>
+                            <p class="card-text"><strong>Rs.100000</strong> per person</p>
+                            <a href="#book" class="btn btn-outline-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Southkorea-->
+                 <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/southkorea.jpg" class="card-img-top" alt="Southkorea">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Southkorea</h5>
+                            <p class="card-text">Experience the vibrant culture and stunning landscapes of South Korea.</p>
+                            <p class="card-text"><strong>Rs.200000</strong> per person</p>
+                            <a href="#book" class="btn btn-outline-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- India -->
+                 <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/india.jpg" class="card-img-top" alt="India">
+                        <div class="card-body text-center"> 
+                            <h5 class="card-title">India</h5>
+                            <p class="card-text">Experience the cultural tradition temples and cuisin of India</p>
+                            <p class="card-text"><strong>Rs.300000</strong> per person</p>
+                            <a href="#book" class="btn btn-outline-primary">Book Now</a>
+
+                        </div>
+                    </div>
+                 </div>
+                
+                <!-- France -->
+                 <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/france.jpg" class="card-img-top" alt="France">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">France</h5>
+                            <p class="card-text">Experience the romantic cities, art museums, and wine regions of
+                                France.</p>
+                                <p class="card-text"><strong>Rs.400000</strong> per person</p>
+                                <a href="#book" class="btn btn-outline-primary">Book Now</a>
+                        </div>
+                    </div>
+                 </div>
+                <!--Italy -->
+                 <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/italy.jpg" class="card-img-top" alt="Italy">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Italy</h5>
+                            <p class="card-text">Experience the rich history, art, architecture, and delicious food
+                                of Italy.</p>
+                                <p class="card-text"><strong>Rs.500000</strong> per person</p>
+                                <a href="#book" class="btn btn-outline-primary">Book Now</a>
+                        </div>
+                    </div>
+                 </div>
+                <!--Japan -->
+                 <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/japan.jpg" class="card-img-top" alt="Japan">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Japan</h5>
+                            <p class="card-text">Experience the rich history, culture, and natural beauty of Pakistan</p>
+                            <p class="card-text"><strong>Rs.600000</strong> per person</p>
+                            <a href="#book" class="btn btn-outline-primary">Book Now</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+                
+        </div>
+    </section>
+    
+
+    <!-- Services  -->
+    <section id="services" class="services py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <!-- Hotel -->
+                <div class="col-md-4 text-center mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-hotel fa-3x mb-3"></i>
+                        <h4>Luxury Hotels</h4>
+                        <p>Stay in top-rated hotels with premium amenities.</p>
+                    </div>
+                </div>
+                
+                <!--Locations-->
+                 <div class="col-md-4 text-center mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-plane fa-3x mb-3"></i>
+                        <h4>Locations</h4>
+                        <p>Enjoy beautiful landmarks and locations to visit</p>
+                    </div>
+                 </div>
+                <!-- Transportation-->
+                 <div class="col-md-4 text-center mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-car fa-3x mb-3"></i>
+                        <h4>Transportation</h4>
+                        <p>Get picked up from the airport and enjoy a comfortable ride to your destination</p>
+                    </div>
+                 </div>
+                
+                <!--Foods  -->
+                 <div class="col-md-4 text-center mb-4">
+                    <div class="service-item"> 
+                        <i class="fas fa-utensils fa-3x mb-3"></i>
+                        <h4>Food and Drink</h4>
+                        <p>Enjoy a variety of cuisines and drinks at your destination</p>
+
+                    </div>
+                 </div>
+
+                <!--Language guide -->
+                 <div class="col-md-4 text-center mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-globe fa-3x mb-3"></i>
+                        <h4>Language Support</h4>
+                        <p>Get assistance in multiple languages to make your trip more enjoyable</p>
+
+                    </div>
+                 </div>
+
+                <!--Tourist guide -->
+                <div class="col-md-4 text-center mb-4">
+                    <div class="service-item">
+                        <i class="fas fa-map-marker-alt fa-3x mb-3"></i>
+                        <h4>Guided Tours</h4>
+                        <p>Get a personalized tour guide to explore your destination</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+            
+        
+    </section>
+   
+
+    <!-- About -->
+    <section id="about" class="about py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                <img src="/images/about.jpg" alt="About Us" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h3>Who We Are</h3>
+                    <p>We are a passionate travel agency dedicated to creating memorable experiences. Our mission is to help you discover the beauty of the world with ease and comfort.</p>
+                    <a href="#contact" class="btn btn-primary mt-3">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact -->
+    <section id="contact" class="contact py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6 text-center">
+                    <h5>Contact Us At:</h5>
+                    <p><i class="fas fa-phone-alt"></i> +977987654321</p>
+                    <p><i class="fas fa-envelope"></i> info@TravelVentures.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kapan, Kathnamdu, Nepal</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="fab fa-pinterest fa-2x"></i></a>
+
+                        <a href="#" class="text-dark"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!-- Footer  -->
+    <footer class="footer py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; 2024 TravelVentures. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+     <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-eVphTev9rtiwoP4nl5gPChTRG1GFu5jXEZgrcQrxCJo06l/mYib9K6GP09KT4nN0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-c3RmB1FshIW5vQA3vOli5YSLdKcc53xLTVE7pvZoMHE5HEEu1cEzjl6rm9FML/2c" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
